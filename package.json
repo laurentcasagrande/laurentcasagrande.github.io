@@ -17,6 +17,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bootstrap": "^5.3.3"
+		"bootstrap": "^5.3.3",
+		"svelte-carousel": "^1.0.25"
 	}
 }
