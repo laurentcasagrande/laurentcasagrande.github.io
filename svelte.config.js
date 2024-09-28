@@ -10,6 +10,10 @@ export default {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+        paths: {
+            // change below to your repo name
+            base: process.argv.includes('dev') ? '' : '/laurentcasagrande.github.io'
+		},
 	}
 };
