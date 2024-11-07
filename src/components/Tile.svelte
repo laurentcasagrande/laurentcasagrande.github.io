@@ -5,32 +5,16 @@
   export let img_path;
   export let description;
   export let link;
-
-  let mouseX = 0;
-  let mouseY = 0;
-
-  const handleMouseMove = (e) => {
-      const rect = document.getElementById('cards').getBoundingClientRect();
-      const w = rect.right - rect.left;
-      const h = rect.bottom - rect.top;
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      mouseX = 0.5*w + 0.7*(x - w/2);
-      mouseY = 0.5*h + 0.7*(y - h/2);
-  };
-
-  onMount(() => {
-      document.getElementById('cards').addEventListener('mousemove', handleMouseMove);
-  });
+  export let mouseX;
+  export let mouseY;
 </script>
 
 <svelte:head>
 
 </svelte:head>
 
-<div id="cards" style="--mouse-x: {mouseX}px; --mouse-y: {mouseY}px;">
-  <a class="card" href={link}>
+
+  <a class="card" href={link} style="--mouse-x: {mouseX}px; --mouse-y: {mouseY}px;">
       <div class="card-content">
           <div class="card-info-wrapper row">
               <div class="card-info">
@@ -58,7 +42,6 @@
           
       </div>
   </a>
-</div>
 
 
 <style>

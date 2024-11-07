@@ -15,11 +15,11 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"gh-pages": "^6.1.1",
 		"svelte": "^4.2.7",
+		"svelte-carousel": "^1.0.25",
 		"vite": "^5.0.3"
 	},
 	"type": "module",
 	"dependencies": {
-		"bootstrap": "^5.3.3",
-		"svelte-carousel": "^1.0.25"
+		"bootstrap": "^5.3.3"
 	}
 }
