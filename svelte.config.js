@@ -1,8 +1,9 @@
 import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-export default {
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
 	kit: {
-
 		adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below
@@ -16,5 +17,8 @@ export default {
             // change below to your repo name
             base: process.argv.includes('dev') ? '' : '/laurentcasagrande.github.io'
 		},
-	}
+	},
+	preprocess: vitePreprocess()
 };
+
+export default config;
