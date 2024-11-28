@@ -12,7 +12,7 @@
 
   
   <div class="rounded border border-black max-w-sm mx-auto">  <!-- card -->
-    <h1>{title}</h1> <!-- title -->
+    <h1 >{title}</h1> <!-- title -->
     <img src="{img_path}">
     <p>{description}</p>
       <button onclick="window.location.href='{link}';" class = "rounded border border-black ">

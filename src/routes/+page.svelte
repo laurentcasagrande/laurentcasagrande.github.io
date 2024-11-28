@@ -4,7 +4,7 @@
 
 
   const data = [
-    { id: 1, title: "'Murica", 
+    { id: 1, title: "Joe Biden", 
     img_path: "https://totallyhistory.com/wp-content/uploads/2013/04/Mao.jpg", 
     description: "Louis Bergeron war ein französischer Journalist, Dramatiker und Schriftsteller. Geboren und aufgewachsen in Chauny, zog er 1829 nach Paris, wo er Rechtswissenschaften studierte.", 
     link: "https://youtu.be/dQw4w9WgXcQ?si=Df1uLMU6qGKYe1F"},
